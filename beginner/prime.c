@@ -3,6 +3,8 @@ int main(void)
 {
 	int n,i,count=0;
 	scanf("%d",&n);
+	if(n<=1000)
+	{
 	for(i=1;i<=n/2;i++)
 	{
 		if(n%i==0)
@@ -14,5 +16,8 @@ int main(void)
 	}
 	else
 	printf("no");
+	}
+	else
+		printf("invalid");
 	return 0;
 }
